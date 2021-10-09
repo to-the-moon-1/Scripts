@@ -30,12 +30,14 @@ if (!TASKS || !TASKS.tasks || !TASKS.tasks.length) {
 const tasks = (state = TASKS.tasks, { id, text, isCompleted, type }) => {
   switch (type) {
     case ADD_TASK:
-      state.push({
-        id,
-        text,
-        isCompleted,
-      });
-      return state;
+      return [
+        ...state,
+        {
+          id,
+          text,
+          isCompleted,
+        },
+      ];
     case REMOVE_TASK:
       return [...state].filter(task => task.id !== id);
     case COMPLETE_TASK:

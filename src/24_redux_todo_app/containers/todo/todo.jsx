@@ -43,7 +43,8 @@ class ToDo extends Component {
   filterTasks = (tasks, activeFilter) => {
     switch (activeFilter) {
       case 'completed':
-        return tasks.filter(task => task.isCompleted);
+        tasks.filter(task => task.isCompleted);
+        return tasks;
       case 'active':
         return tasks.filter(task => !task.isCompleted);
       default:

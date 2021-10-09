@@ -67,8 +67,6 @@ class ToDo extends Component {
     const filteredTasks = this.filterTasks(tasks, filters);
     const taskCounter = this.getActiveTasksCounter(tasks);
 
-    tasks.filter(Boolean);
-
     return (
       <div className="todo-wrapper">
         <ToDoInput

@@ -43,8 +43,7 @@ class ToDo extends Component {
   filterTasks = (tasks, activeFilter) => {
     switch (activeFilter) {
       case 'completed':
-        tasks.filter(task => task.isCompleted);
-        return tasks;
+        return tasks.filter(task => task.isCompleted);
       case 'active':
         return tasks.filter(task => !task.isCompleted);
       default:
@@ -67,6 +66,8 @@ class ToDo extends Component {
     const isTasksExist = tasks && tasks.length > 0;
     const filteredTasks = this.filterTasks(tasks, filters);
     const taskCounter = this.getActiveTasksCounter(tasks);
+
+    tasks.filter(Boolean);
 
     return (
       <div className="todo-wrapper">

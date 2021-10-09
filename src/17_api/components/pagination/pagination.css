@@ -1,0 +1,20 @@
+.paginationWrapper {
+  background-color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding: 20px 40px;
+}
+
+.paginationWrapper button {
+  background-color: transparent;
+  border: 1px solid #e7e7e7;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.paginationWrapper button.active {
+  background-color: rgba(175, 47, 47, 0.15);
+}

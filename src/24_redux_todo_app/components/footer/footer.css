@@ -1,0 +1,43 @@
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  padding: 0 6px 0 21px;
+  position: relative;
+}
+
+.amount {
+  font-size: 13.3333px;
+}
+
+.btn-group {
+  position: relative;
+  z-index: 1;
+}
+
+.filter-btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 3px;
+  padding: 3px 7px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: rgba(175, 47, 47, 0.2);
+}
+
+.footer:before {
+  bottom: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6,
+    0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6,
+    0 17px 2px -6px rgba(0, 0, 0, 0.2);
+  content: '';
+  height: 50px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
